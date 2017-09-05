@@ -32,8 +32,8 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 * Lecture 5 [(audio)](https://clyp.it/whwedabc) [(Randip Parhar)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec05parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec05tang.pdf) [(Prof)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec05kap.pdf)
 * Lecture 4 [(audio)](https://clyp.it/hplwtkqg) [(Marcin Sendrowicz Lec3&4)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec04marcin.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec04parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec04tang.pdf)  [(Prof)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec04kap.pdf)
 * Lecture 3 [(audio)](https://clyp.it/cqxbt3ez) [(Randip Parhar)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03tang.pdf) [(Andrew Kwak)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03kwak.pdf) [(ZhauHua Tan)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03tan.pdf)  [(Ken Zou)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03zou.pdf) [(Prof)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/lectures/lec03kap.pdf)-->
-* Lecture 2 [(audio)](https://youtu.be/NByGnSrAdPg)
-* Lecture 1 [(audio)](https://youtu.be/WBV7lcyVaJA)
+* Lecture 2 [(audio)](https://youtu.be/NByGnSrAdPg) [(Jong Whi Pak)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec02pak.pdf)  
+* Lecture 1 [(audio)](https://youtu.be/WBV7lcyVaJA) [(Jong Whi Pak)](https://github.com/kapelner/QC_Math_241_Fall_2017/blob/master/lectures/lec01pak.pdf)  
 
 
 ## Prerequisite Review
