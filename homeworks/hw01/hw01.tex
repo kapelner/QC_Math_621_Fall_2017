@@ -7,7 +7,7 @@
 
 
 
-\title{MATH 621 Fall 2017 Homework \#1 INCOMPLETE}
+\title{MATH 621 Fall 2017 Homework \#1}
 
 \author{Professor Adam Kapelner} %STUDENTS: write your name here
 
@@ -105,8 +105,27 @@ Find the PMF of $T = X_1 + X_2$ using a convolution.}\spc{6}
 
 \easysubproblem{Without needing to compute (c), what is the answer if $r=1$?}\spc{0}
 
-\intermediatesubproblem{Let $X \sim \poisson{\lambda}$ independent of $Y \sim \poisson{\lambda}$. Find an expression for $\prob{X > Y}$ \emph{as best as you are able to answer}.}\spc{6}
+\intermediatesubproblem{Let $X \sim \poisson{\lambda}$ independent of $Y \sim \poisson{\lambda}$. Find an expression for $\prob{X > Y}$ \emph{as best as you are able to answer}. Part of this exercise is identifying where you cannot go any further.}\spc{9}
 
+
+\end{enumerate}
+
+
+\problem{These exercises will introduce the Multinomial distribution.}
+
+
+\begin{enumerate}
+
+\easysubproblem{If $\X \sim \multinomial{n}{\p}$ where $\dime{\X} = k$, what is $\dime{\p}$?}\spc{0}
+
+
+\easysubproblem{If $\X \sim \multinomial{n}{\p}$ and $n= 10$ and $\dime{\X} = 15$ as a column vector, give an example value of $\x$, a realization of the r.v. $\X$.}\spc{2}
+
+
+\intermediatesubproblem{If $\X \sim \multinomial{n}{\p}$ and $n= 10$ and $\p = \bracks{0.2, 0.8}^\top$, find $\muvec := \expe{\X}$.}\spc{2}
+
+
+\hardsubproblem{If $\X_1 \sim \multinomial{n}{\p}$ and independently $\X_2 \sim \multinomial{n}{\p}$ where $\dime{\X_1} = \dime{\X_2} = k$. Find the JMF of $\T_2 = \X_1 + \X_2$ from the definition of convolution. This looks harder than it is! First, use the definition of convolution. Then follow 1(g) updating each piece of information from binomial to multinomial, Finally, use Theorem 1 in \href{http://www.lrecits.usthb.dz/1.3.pdf}{this paper} for the summation.}\spc{9}
 
 \end{enumerate}
 
