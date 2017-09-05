@@ -41,22 +41,22 @@ My lectures can be listened to as youtube tracks [(all lectures)](https://www.yo
 This class has prerequesites of basic probability and some linear algebra. In this section, I will be posting links to review items based on lectures. A good reference is the [Ross book](https://www.amazon.com/First-Course-Probability-6th/dp/0130338516/ref=sr_1_6?ie=UTF8&qid=1504062810&sr=8-6&keywords=probability+ross) - find the terms we are talking about. Needless to say, wikipedia (just query terms used in class) is an indispensable resource.
 
 * Lecture 1 - Bernoulli, Binomial, In/dependence of r.v.'s - see [lecture 8 and lecture 9](https://github.com/kapelner/QC_Math_241_Fall_2016) from my 241 class. You can look at students' notes and listen to the audio tracks. As for questions you can do yourself, look [here](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 1, 2a,e, [here](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 1a-d, h-k, 3a,b, 
-* Lecture 2 - Geometric, Negative Binomial, Poisson - see [lecture 10](https://github.com/kapelner/QC_Math_241_Fall_2016) from my 241 class (notes and audio). [here](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 2b-d,f,g and [here](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 1l-p, 3c
+* Lecture 2 - Geometric, Negative Binomial - see [lecture 10](https://github.com/kapelner/QC_Math_241_Fall_2016) from my 241 class (notes and audio). [here](https://github.com/kapelner/QC_Math_241_Fall_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 2b-d,f,g and [here](https://github.com/kapelner/QC_Math_241_Fall_2015/blob/master/exams/midterm2/midterm2_solutions.pdf) at questions 1l-p, 3c
 
 
 ## Homeworks
 
 <!--
-* Homework 9 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12/16)
-* Homework 8 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2/16)
-* Homework 7 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23/16)
-* Homework 6 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11/16)
-* Homework 5 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf) (due 10/27/16)
-* Homework 4 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/16)
-* Homework 3 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/16)
-* Homework 2 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/16)
-* Homework 1 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/6/16)-->
-* Homework 0 [(last few pages of syllabus)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/syllabus/syllabus.pdf?raw=true) (due 9/1/17)
+* Homework 9 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12)
+* Homework 8 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2)
+* Homework 7 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23)
+* Homework 6 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11)
+* Homework 5 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf) (due 10/27)
+* Homework 4 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6)
+* Homework 3 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20)
+* Homework 2 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13)-->
+* Homework 1 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/14)
+* Homework 0 [(last few pages of syllabus)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/syllabus/syllabus.pdf?raw=true) (due 9/1)
 
 
 ## Exams
