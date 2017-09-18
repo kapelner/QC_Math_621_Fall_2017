@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 621 Fall 2017 Homework \#2 UNRELEASED}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due under my door, Monday 1:30PM, September 25, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, review Math 241 concerning random variables, support, parameter space, PMF's, CDF's. Then read about convolutions and the multinomial distribution.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems. 
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 10 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks which are \textit{not} on this printout. Keep this first page printed for your records.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){380}
+\clearpage
+}
+
+\problem{We will practice operators on vector-valued r.v.'s.}
+
+\begin{enumerate}
+
+\easysubproblem{Prove $\var{X} = \cov{X}{X}.$}\spc{2}
+
+\easysubproblem{Prove $\cov{X_i + c}{X_j + d} = \cov{X_i}{X_j}.$}\spc{2}
+\hardsubproblem{Prove $\cov{\sum_i X_i}{\sum_j X_j} = \sum_i \sum_j \cov{X_i}{X_j}.$}\spc{14}
+
+
+\easysubproblem{Why is $\var{\c^\top \X} = \c^\top \var{\X} \c$ called a \qu{quadratic form?}}\spc{4}
+
+
+\end{enumerate}
+
+\problem{These exercises will continue investigating the Multinomial distribution.}
+
+
+\begin{enumerate}
+
+\easysubproblem{If $\X \sim \multinomial{n}{\p}$ where $\dime{\X} = k$, and $T = X_1 + \ldots + X_k$, find the PMF of $p_T(t)$.}\spc{0}
+
+
+\hardsubproblem{If $\X \sim \multinomial{n}{\p}$ where $\dime{\X} = k$, find $p_{X_i, X_j}(x_i, x_j)$.}\spc{20}
+
+\hardsubproblem{Find a proof for $\cov{X_i}{X_j} = np_i p_j$ that is different than the one we did in class.}\spc{17}
+
+
+\easysubproblem{Assume $\forall i~ p_i = 1 / K$. What is $\cov{X_i}{X_j}$ as $K$ grows without bound? Why does this make sense?}\spc{6}
+
+
+\intermediatesubproblem{What is $\cov{X_i}{X_j}$ as $n$ grows without bound? (No need to assume $\p$ is uniform).}\spc{5}
+
+
+\easysubproblem{Find $\corr{\X}$.}\spc{5}
+
+
+\end{enumerate}
+
+\problem{These exercises will introduce continuous convolutions.}
+
+
+\begin{enumerate}
+
+\easysubproblem{Explain the difference between these two definitions of convolution:
+
+\beqn
+f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_\reals f_{X,Y}(x, t-x) dx \\
+f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_\reals f_X(x) f_Y(t-x) dx
+\eeqn
+
+}~\spc{5}
+
+
+\easysubproblem{Explain the difference between these two definitions of convolution:
+
+\beqn
+f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_\reals f_X(x) f_Y(t-x) dx \\
+f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_{\support{X}} f_X(x) f_Y(t-x) \indic{t-x \in \support{Y}}dx
+\eeqn
+
+}~\spc{5}
+
+\easysubproblem{If $X_1 \sim \uniform{a_1}{b_1}$ and $X_2 \sim \uniform{a_2}{b_2}$ independently, find $\support{T}$ where $T = X_1 + X_2$.}\spc{1}
+
+\intermediatesubproblem{Find $f_T(t)$ using the convolution.}\spc{15}
+
+\intermediatesubproblem{Find $F_T(t)$ using the double integral / graphical method.}\spc{15}
+
+\end{enumerate}
+
+\problem{These exercises will introduce the Exponential, Erlang and Poisson models.}
+
+
+\begin{enumerate}
+
+\easysubproblem{Prove that $X \sim \exponential{\lambda}$ is \qu{memoryless}.}\spc{5}
+
+\hardsubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$, prove that $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$ using induction on the convolution.}\spc{25}
+
+\easysubproblem{Explain what the one-dimensional Poisson process is.}\spc{5}
+
+\hardsubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$ and $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$, find $F_{T_{10}}(1)$ explicitly.}\spc{15}
+
+\end{enumerate}
+
+\end{document}
