@@ -7,12 +7,12 @@
 
 
 
-\title{MATH 621 Fall 2017 Homework \#2 UNRELEASED}
+\title{MATH 621 Fall 2017 Homework \#2}
 
 \author{Professor Adam Kapelner} %STUDENTS: write your name here
 
 \iftoggle{professormode}{
-\date{Due under my door, Monday 1:30PM, September 25, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+\date{Due under my door, Monday 11:59PM, October 2, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
 }
 
 \renewcommand{\abstractname}{Instructions and Philosophy}
@@ -103,11 +103,12 @@ f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_\reals f_X(x) f_Y(t-x) dx \
 f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_{\support{X}} f_X(x) f_Y(t-x) \indic{t-x \in \support{Y}}dx
 \eeqn
 
+\tiny{Note: it is possible the first one is not considered a \qu{convolution} by all disciplines but we are ignoring that.}\normalsize
 }~\spc{5}
 
 \easysubproblem{If $X_1 \sim \uniform{a_1}{b_1}$ and $X_2 \sim \uniform{a_2}{b_2}$ independently, find $\support{T}$ where $T = X_1 + X_2$.}\spc{1}
 
-\intermediatesubproblem{Find $f_T(t)$ using the convolution.}\spc{15}
+\intermediatesubproblem{Find $f_T(t)$ using the convolution.}\spc{15}~\vspace{1cm}
 
 \intermediatesubproblem{Find $F_T(t)$ using the double integral / graphical method.}\spc{15}
 
@@ -122,9 +123,16 @@ f_{X+Y}(t) = f_X(x) * f_Y(x) &:=& \int\displaylimits_{\support{X}} f_X(x) f_Y(t-
 
 \hardsubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$, prove that $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$ using induction on the convolution.}\spc{25}
 
-\easysubproblem{Explain the one-dimensional Poisson process \textit{in English}.}\spc{5}
+\easysubproblem{Explain the one-dimensional Poisson process \textit{in English}.}\spc{2}
 
-\hardsubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$ and $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$, find $F_{T_{10}}(1)$ explicitly.}\spc{15}
+\easysubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$ and $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$, write $F_{T_{k+1}}(1)$ in terms of the CDF of $N \sim \poisson{\lambda}$.}\spc{1}
+
+\hardsubproblem{If $X_1, X_2, \ldots \iid \exponential{\lambda}$ and $T_k = \sum_{i=1}^k X_i \sim \erlang{k}{\lambda}$, write $F_{T_{k+1}}(2)$ in terms of the CDF of a Poisson r.v $N$.}\spc{6}
+
+\intermediatesubproblem{If $X_1, X_2, \ldots \iid \geometric{p}$ and $T_k = \sum_{i=1}^k X_i$, write $F_{T}(t)$ in terms of the CDF of a Binomial r.v. $N$.}\spc{8}
+
+\intermediatesubproblem{If $X_1 \sim \poisson{\lambda_1}$ and $X_2 \sim \poisson{\lambda_1}$ independently, find the conditional probability of $\cprob{X_1 = x}{X_1 + X_2 = n}$ expressed as a PMF of a known r.v.}\spc{6}
+
 
 \end{enumerate}
 
