@@ -61,7 +61,7 @@ This class has prerequesites of basic probability and some linear algebra. In th
 
 ## Exams
 
-* Midterm I, October 3 (in class). 
+* Midterm I, October 3 (in class). [(exam)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)
 
 * Midterm II, November 14 (in class). 
 
