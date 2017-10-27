@@ -24,7 +24,7 @@
 \begin{abstract}
 The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
 
-Reading is still \textit{required}. For this homework set, read about transformations of r.v.'s (discrete and continuous).
+Reading is still \textit{required}. For this homework set, read about univariate and multivariate transformations of r.v.'s (discrete and continuous), kernels of PMFs / PDFs, order statistics, the gamma and beta functions, mixture / compound distributions, the normal distribution and the $\chi^2$ distribution.
 
 The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems. 
 
@@ -43,66 +43,134 @@ NAME: \line(1,0){380}
 }
 
 
-\problem{We will practice transformations on discrete r.v.'s.}
+\problem{We will practice finding kernels and relating them to known distributions. The gamma function and the beta function will come up as well.}
+
+\begin{enumerate}
+
+\easysubproblem{Find the kernel of the negative binomial PMF.}\spc{3}
+
+\easysubproblem{Find the kernel of the beta PDF.}\spc{3}
+
+\easysubproblem{Find the kernel of the beta binomial PMF.}\spc{3}
+
+\easysubproblem{If $k(x) = e^{\lambda x} x^{k-1}$ how would you know if the r.v. $X$ was an $\erlang{k}{\lambda}$ or a $\gammadist{k}{\lambda}$?}\spc{4}
+
+
+\intermediatesubproblem{If $k(x) = xe^{-x^2}$, how is $X$ distributed?}\spc{4}
+
+
+\hardsubproblem{If $k(x) = x^{-d}$ where $d>1$, how is $X$ distributed?}\spc{5}
+
+\hardsubproblem{Given only $k(x)$, would you be able find $\support{X}$? Yes/no and explain.}\spc{2}
+
+
+\hardsubproblem{Prove $B(\alpha, \beta) = \frac{\Gammaf{\alpha}\Gammaf{\beta}}{\alpha+\beta}$. Using the method from class (i.e. the textbook) is not required.}\spc{13}
+
+
+\end{enumerate}
+
+\problem{We will now practice using order statistics concepts.}
 
 
 
 \begin{enumerate}
 
-\easysubproblem{If $X \sim \binomial{n}{p}$ and $Y = c + aX$, find $p_Y(y)$ and the $\support{Y}$.}\spc{2}
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the CDF of the maximum $X_i$ and express the CDF of the minimum $X_i$.}\spc{2}
+
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the PDF of the maximum $X_i$ and express the CDF of the minimum $X_i$.}\spc{2}
 
 
-\easysubproblem{If $X \sim \binomial{n}{p}$ and $Y = X^2$, find $p_Y(y)$ and the $\support{Y}$.}\spc{3}
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the PDF and the CDF of $X_{(k)}$ i.e. the $k$th smallest $X_i$.}\spc{5}
+
+\hardsubproblem{If $\Xoneton \iid p(x)$, why would the formulas in (a-c) not be accurate?}\spc{10}
+
+\intermediatesubproblem{If $\Xoneton \iid \stduniform$, show that $X_{(k)} \sim \betanot{k}{n-k+1}$.}\spc{4}
+
+\intermediatesubproblem{Express $\binom{n}{k}$ in terms of the beta function.}\spc{4}
+\intermediatesubproblem{Show that $I_x(\alpha, \beta + 1) = I_x(\alpha, \beta) + \frac{x^\alpha (1 - x)^\beta}{\beta B(\alpha, \beta)}$.}\spc{12}
+
+\extracreditsubproblem{If $\Xoneton \iid \uniform{a}{b}$, show that $X_{(k)}$ is a linear transformation of the beta distribution and find its parameters.}\spc{10}
+
+\extracreditsubproblem{If $X \sim \binomial{n}{p}$, show that $F(x) = I_{1-p}(n-k, k+1)$}\spc{15}
 
 
-\hardsubproblem{If $X \sim \binomial{n}{p}$ and $Y = |X - k|$ where $k \in \naturals$, find $p_Y(y)$ and the $\support{Y}$.}\spc{12}
-
-
-\hardsubproblem{If $X \sim \poisson{\lambda_1}$ independent of $Y \sim \poisson{\lambda_2}$, and $T = X - Y$, find $p_T(t)$ and the $\support{T}$. This is called the Skellam$(\lambda_1, \lambda_2)$ distribution, the generalization of what we found in class.}\spc{13}
-
-\intermediatesubproblem{According to the \href{https://www.baseball-reference.com/leagues/MLB/2016.shtml}{major league baseball statistics of 2016}, the New York Yankees scored 4.20 runs per game on average and the Boston Red Socks scored 5.42 runs per game on average. If the Poisson distribution is a good model for runs scored in a baseball game (and that's a big \qu{if}), find an expression for the probability the Yankees beat the Red Sox in one game.}\spc{10}
-
-\easysubproblem{Evaluate the expression. You will need the \texttt{besselI} \href{https://stat.ethz.ch/R-manual/R-devel/library/base/html/Bessel.html}{function in R}.}\spc{3}
- 
 \end{enumerate}
 
-\problem{We will now practice transformations on continuous r.v.'s.}
+\problem{We will practice truncations of r.v.'s.}
+\begin{enumerate}
+
+
+\easysubproblem{Given r.v. $X$, restate the formulas for the PDF of $X$ for (i) the arbitrary truncation to the set $X \in A$, (ii) the truncation for $X \geq x_0$ and (iii) the truncation for $X \leq x_0$.}\spc{4}
+
+\intermediatesubproblem{If $T \sim \weibull{k}{\lambda}$ and it is known that $T \leq 120$ years, find the PDF of the truncated $T$.}\spc{2}
+
+
+\intermediatesubproblem{Using the notation from 2(i), find the PMF of $X \sim \binomial{n}{p}$ where it is known that $X > n_0$.}\spc{2}
+
+\end{enumerate}
+
+
+\problem{We will now practice multivariate change of variables where $\Y = \bv{g}(\X)$.}
 
 \begin{enumerate}
 
-\easysubproblem{If $X \sim \exponential{\lambda}$ and $Y = c + aX$, find $f_Y(y)$ and the $\support{Y}$.}\spc{2}
+\easysubproblem{State the formula for the PDF of $\Y$.}\spc{4}
 
-\intermediatesubproblem{If $X \sim \erlang{k}{\lambda}$ and $Y = aX$ where $a \in (0, \infty)$, find $f_Y(y)$ and the $\support{Y}$. If possible, give its brand name and find its parameters.}\spc{17}
 
-\intermediatesubproblem{If $X \sim \exponential{\lambda}$ and $Y = e^{-X}$, find $f_Y(y)$ and the $\support{Y}$.}\spc{10}
+\easysubproblem{Demonstrate that the formula for the PDF of $\Y$ reduces to the univariate change of variables formula if the dimensions of $\Y$ and $\X$ are 1. }\spc{4}
 
-\intermediatesubproblem{If $X \sim \exponential{1}$ and $Y =-\natlog{\frac{e^{-X}}{1 - e^{-X}} }$, find $f_Y(y)$ and the $\support{Y}$.}\spc{10}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$ if $X_1$ and $X_2$ are independent.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$ if $X_1$ and $X_2$ are independent and have positive supports.}\spc{2}
+
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$ if $X_1$ and $X_2$ are independent.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$ if $X_1$ and $X_2$ are independent and have positive supports.}\spc{2}
+
+\hardsubproblem{Find a formula for the PDF of $Y = X_1^{X_2}$.}\spc{10}
+
+\hardsubproblem{Find the PDF of $Y = \frac{X_1}{X_2}$ if $X_1 \sim \gammadist{\alpha}{1}$ independent of $X_2 \sim \gammadist{\beta}{1}$. This is known as the beta prime distribution $\beta'(\alpha, \beta)$.}\spc{10}
 
 \end{enumerate}
 
-\problem{The following exercises are on survival distributions.}
+
+\problem{We will now practice multilevel models, mixture distributions and compound distributions.}
 
 \begin{enumerate}
 
-\easysubproblem{If $X \sim \exponential{\lambda}$ and $Y =-\natlog{X}$, find $f_Y(y)$ and the $\support{Y}$ and if it's a brand name r.v. indicate so.}\spc{9}
+\easysubproblem{According to the \href{http://www.pewforum.org/2015/05/12/chapter-3-demographic-profiles-of-religious-groups/}{Pew Research Center's demographic survey of Americans}, \qu{religious} people have more children than \qu{non-religious} people. As an example, Mormons have on average 3.4 children and Atheists have on average 1.6 children. Model both groups' number of children as Poissons.}\spc{2}
 
-\easysubproblem{If $X \sim \gumbel{\mu}{1}$ and $Y =e^{-X}$, find $f_Y(y)$ and the $\support{Y}$ and if it's a brand name r.v. indicate so.}\spc{9}
+\hardsubproblem{Comment on the appropriateness of the Poisson model here.}\spc{3}
 
-\hardsubproblem{If $X \sim \exponential{1}$ and $Y =\mu + \natlog{\oneover{X^\beta}}$, find $f_Y(y)$ and the $\support{Y}$ and if it's a brand name r.v. indicate so.}\spc{9}
+\easysubproblem{If we are to only consider atheists and Mormons, there are about 10M atheists in the American population and about 7M Mormons in the American population. Create a r.v. $X$ which is 1 if Mormon and 0 if atheist.}\spc{1}
 
-\intermediatesubproblem{Let $X \sim \weibull{k}{\lambda}$. In class we showed that if $k=2$, the r.v. is not memoryless; the probability decreases as you condition on longer and longer survival times i.e. $\prob{X \geq b} > \cprob{X \geq a + b}{X \geq a}$. To prove this for arbitrary $k>1$, first show that this implies $a^k + b^k < \tothepow{a+b}{k}$.}\spc{9}
+\intermediatesubproblem{If you call $Y$ the number of children someone has, find the distribution of $Y$ where atheist/Mormon status is unknown. Draw a tree of this model. }\spc{7}
 
-\easysubproblem{Let $X \sim \weibull{k}{\lambda}$. In class we showed that if $k=\half$, the r.v. is not memoryless; the probability increases as you condition on longer and longer survival times i.e. $\prob{X \geq b} < \cprob{X \geq a + b}{X \geq a}$. To prove this for arbitrary $k<1$, first show that this implies $a^k + b^k > \tothepow{a+b}{k}$. Hint: this is the same problem as (d) except the inequality flips.}\spc{9}
-
-\extracreditsubproblem{Prove (d) and (e).}\spc{9}
+\easysubproblem{Is this a mixture or compound distribution?}\spc{0}
 
 
-\hardsubproblem{If $X \sim \stduniform$ and $Y = \beta\tothepow{-\natlog{X}}{-\oneover{\alpha}}$, find $f_Y(y)$ and the $\support{Y}$ and if it's a brand name r.v. indicate so.}\spc{14}
+\hardsubproblem{If somone has 5 kids, what is the probability they are Mormon according to our model?}\spc{9}
 
 
-\easysubproblem{If $X \sim \erlang{k}{\lambda}$ explain why allowing $k \in (0, \infty)$ instead of $k \in \naturals$ is reasonable. What is this \qu{new} r.v. called? (It is not a transformation of the Erlang, it is just expanding its parameter space and hence generalizing it a little bit).}\spc{9}
+\hardsubproblem{Find the mixture distribution for $Y$ if $Y~|~X=x \sim \binomial{x}{p}$ where $X \sim \poisson{\lambda}$. Draw a tree of this model. Get as far as you can.}\spc{10}
+
+\hardsubproblem{Find the compound distribution for $Y$ if $Y~|~X_1=x_1,~X_2=x_2 \sim \betanot{x_1}{x_2}$ where $X_1 \sim \gammadist{\alpha_1}{\beta_1}$ independent of $X_2 \sim \gammadist{\alpha_2}{\beta_2}$. Draw a tree of this model. Get as far as you can.}\spc{11}
+
+
+\easysubproblem{Can this be considered an \qu{overdispersed} beta? Yes/no.}\spc{0}
+
+
+\easysubproblem{Why does mixing / compounding give more \qu{degrees of freedom} to the model of the phenomenom you care about (denoted $Y$ in class and above). Discuss what this means and how it may be useful in the real world.}\spc{10}
 
 
 \end{enumerate}
+
+%%% TK: simple transformations of the normal, chisq, lognormal, truncated normal.
 
 \end{document}
