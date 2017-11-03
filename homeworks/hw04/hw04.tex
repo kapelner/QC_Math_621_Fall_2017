@@ -178,6 +178,40 @@ NAME: \line(1,0){380}
 
 \end{enumerate}
 
+\problem{Introducing the king: the normal distribution $\mathcal{N}$ and his princes/sses: the lognormal distribution Log$\mathcal{N}$, chi-squared distribution $\chi^2_k$, Student's T distribution $T_k$ and Fisher-Snecodor's distribution $F_{k_1,k_2}$.}
+
+\begin{enumerate}
+
+\easysubproblem{Let $X_1 \sim \normnot{\mu_1}{\sigsq_1}$ independent of $X_2 \sim \normnot{\mu_2}{\sigsq_2}$. Prove $X_1 + X_2 \sim  \normnot{\mu_1 + \mu_2}{\sigsq_1 + \sigsq_2}$ using ch.f.'s.}\spc{5}
+
+\extracreditsubproblem{Let $X_1 \sim \normnot{\mu_1}{\sigsq_1}$ independent of $X_2 \sim \normnot{\mu_2}{\sigsq_2}$. Prove $X_1 + X_2 \sim  \normnot{\mu_1 + \mu_2}{\sigsq_1 + \sigsq_2}$ using the definition of convolution on a separate page. This is in the book but try not to look at it.}\spc{0}
+
+\intermediatesubproblem{Let $X \sim \normnot{\mu}{\sigsq}$ and $Y=X \indic{X \geq a}$. Find $f_Y(y)$.}\spc{6}
+
+\easysubproblem{Let $X \sim \lognormnot{\mu}{\sigsq}$ and $Y=\natlog{X}$. How is $Y$ distributed? Use a heuristic argument. No need to actually change variables.}\spc{3}
+
+
+\intermediatesubproblem{Let $X_1 \sim \lognormnot{\mu_1}{\sigsq_1}$, $X_2 \sim \lognormnot{\mu_2}{\sigsq_2}, \ldots, X_n \sim \lognormnot{\mu_n}{\sigsq_n}$ all independent of each other and $Y=\prod_{i=1}^n X_i$. How is $Y$ distributed? Use a heuristic argument. No need to actually change variables.}\spc{3}
+
+\intermediatesubproblem{The average return of the S\&P 500 stock index since 1928 is 11.4\% and the standard deviation is 19.7\%. Assume for the purposes of this problem that percentage returns is normally distributed (even though it is not true in practice). If you put \$1,000 into the stock market, what is the probability you have \$5,000 after 10 years? The \texttt{R} function you need is \texttt{plnorm}.}\spc{6}
+
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim \chisq{k}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim \chisq{k}$, find the kernel of $f_X(x)$.}\spc{3}
+
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim F_{k_1,k_2}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim F_{k_1,k_2}$, find the kernel of $f_X(x)$.}\spc{3}
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim T_{k}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim T_k$, find the kernel of $f_X(x)$.}\spc{3}
+
+
+
+\end{enumerate}
 %%% TK: simple transformations of the normal, chisq, lognormal, truncated normal.
 
 \end{document}
