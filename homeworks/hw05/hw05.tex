@@ -1,0 +1,223 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 621 Fall 2017 Homework \#5 INCOMPLETE}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due KY258 8PM, Thursday, November 30, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read about the normal distribution, the $\chi^2$ distribution, Student's $T$, the $F$, Cochran's Theorem, the multivariate normal distribution and characteristic functions.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems. 
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 10 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks which are \textit{not} on this printout. Keep this first page printed for your records.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){380}
+\clearpage
+}
+
+
+
+
+
+
+\problem{The $\chi^2$ r.v. within Cochran's Theorem.}
+
+\begin{enumerate}
+
+
+\easysubproblem{Given $\Xoneton \iid f(\mu,\sigsq)$, a density with finite variance, state the estimator (a r.v.) and the estimate (a scalar value) for $\mu$.}\spc{1}
+
+
+\easysubproblem{Prove this estimator is unbiased i.e $\expe{\cdot} = \mu$.}\spc{2}
+
+\easysubproblem{Given $\Xoneton \iid f(\mu,\sigsq)$, a density with finite variance, state the estimator (a r.v.) and the estimate (a scalar value) for $\sigsq$.}\spc{1}
+
+\hardsubproblem{Prove this estimator is unbiased i.e $\expe{\cdot} = \sigsq$. The answer is online but try to do it yourself.}\spc{12}
+
+
+%\easysubproblem{State Cochran's Theorem.}\spc{6}
+
+
+\end{enumerate}
+
+\end{document}
+
+\problem{We will now practice using order statistics concepts.}
+
+
+
+\begin{enumerate}
+
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the CDF of the maximum $X_i$ and express the CDF of the minimum $X_i$.}\spc{2}
+
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the PDF of the maximum $X_i$ and express the PDF of the minimum $X_i$.}\spc{2}
+
+
+\easysubproblem{If $\Xoneton \iid f(x)$ where its CDF is denoted $F(x)$, express the PDF and the CDF of $X_{(k)}$ i.e. the $k$th smallest $X_i$.}\spc{5}
+
+\hardsubproblem{If $\Xoneton \iid p(x)$, why would the formulas in (a-c) not be accurate?}\spc{10}
+
+
+\intermediatesubproblem{If $\Xoneton \iid \exponential{\lambda}$, find the PDF and CDF of the maximum.}\spc{4}
+
+\intermediatesubproblem{If $\Xoneton \iid \exponential{\lambda}$, find the PDF and CDF of the minimum.}\spc{4}
+
+\intermediatesubproblem{If $\Xoneton \iid \stduniform$, show that $X_{(k)} \sim \betanot{k}{n-k+1}$.}\spc{4}
+
+\intermediatesubproblem{Express $\binom{n}{k}$ in terms of the beta function.}\spc{5}
+
+
+\extracreditsubproblem{If $\Xoneton \iid \uniform{a}{b}$, show that $X_{(k)}$ is a linear transformation of the beta distribution and find its parameters.}\spc{8}
+
+\intermediatesubproblem{Show that $I_x(\alpha, \beta + 1) = I_x(\alpha, \beta) + \frac{x^\alpha (1 - x)^\beta}{\beta B(\alpha, \beta)}$.}\spc{4}
+
+\extracreditsubproblem{If $X \sim \binomial{n}{p}$, show that $F(x) = I_{1-p}(n-k, k+1)$}\spc{15}
+
+
+\end{enumerate}
+
+\problem{We will practice truncations of r.v.'s.}
+\begin{enumerate}
+
+
+\easysubproblem{Given r.v. $X$, restate the formulas for the PDF of $X$ for (i) the arbitrary truncation to the set $X \in A$, (ii) the truncation for $X \geq x_0$ and (iii) the truncation for $X \leq x_0$.}\spc{4}
+
+\intermediatesubproblem{If $T \sim \weibull{k}{\lambda}$ and it is known that $T \leq 120$ years, find the PDF of the truncated $T$.}\spc{2}
+
+
+\intermediatesubproblem{Using the notation from 2(i), find the PMF of $X \sim \binomial{n}{p}$ where it is known that $X > n_0$.}\spc{2}
+
+\end{enumerate}
+
+
+\problem{We will now practice multivariate change of variables where $\Y = \bv{g}(\X)$.}
+
+\begin{enumerate}
+
+\easysubproblem{State the formula for the PDF of $\Y$.}\spc{4}
+
+
+\easysubproblem{Demonstrate that the formula for the PDF of $\Y$ reduces to the univariate change of variables formula if the dimensions of $\Y$ and $\X$ are 1. }\spc{4}
+
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$ if $X_1$ and $X_2$ are independent.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_2}$ if $X_1$ and $X_2$ are independent and have positive supports.}\spc{2}
+
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$ if $X_1$ and $X_2$ are independent.}\spc{1}
+
+\easysubproblem{State the formula for the PDF of $Y = \frac{X_1}{X_1 + X_2}$ if $X_1$ and $X_2$ are independent and have positive supports.}\spc{2}
+
+\hardsubproblem{Find a formula for the PDF of $Y = X_1^{X_2}$.}\spc{10}
+
+\hardsubproblem{Find the PDF of $Y = \frac{X_1}{X_2}$ if $X_1 \sim \gammadist{\alpha}{1}$ independent of $X_2 \sim \gammadist{\beta}{1}$. This is known as the beta prime distribution $\beta'(\alpha, \beta)$.}\spc{10}
+
+\end{enumerate}
+
+
+\problem{We will now practice multilevel models, mixture distributions and compound distributions.}
+
+\begin{enumerate}
+
+\easysubproblem{According to the \href{http://www.pewforum.org/2015/05/12/chapter-3-demographic-profiles-of-religious-groups/}{Pew Research Center's demographic survey of Americans}, \qu{religious} people have more children than \qu{non-religious} people. As an example, Mormons have on average 3.4 children and Atheists have on average 1.6 children. Model both groups' number of children as Poissons.}\spc{2}
+
+\hardsubproblem{Comment on the appropriateness of the Poisson model here.}\spc{3}
+
+\easysubproblem{If we are to only consider atheists and Mormons, there are about 10M atheists in the American population and about 7M Mormons in the American population. Create a r.v. $X$ which is 1 if Mormon and 0 if atheist.}\spc{1}
+
+\intermediatesubproblem{If you call $Y$ the number of children someone has, find the distribution of $Y$ where atheist/Mormon status is unknown. Draw a tree of this model. }\spc{7}
+
+\easysubproblem{Is this a mixture or compound distribution?}\spc{0}
+
+
+\hardsubproblem{If somone has 5 kids, what is the probability they are Mormon according to our model?}\spc{9}
+
+
+\hardsubproblem{Find the mixture distribution for $Y$ if $Y~|~X=x \sim \binomial{x}{p}$ where $X \sim \poisson{\lambda}$. Draw a tree of this model. Get as far as you can.}\spc{10}
+
+\hardsubproblem{Find the compound distribution for $Y$ if $Y~|~X_1=x_1,~X_2=x_2 \sim \betanot{x_1}{x_2}$ where $X_1 \sim \gammadist{\alpha_1}{\beta_1}$ independent of $X_2 \sim \gammadist{\alpha_2}{\beta_2}$. Draw a tree of this model. Get as far as you can.}\spc{11}
+
+
+\easysubproblem{Can this be considered an \qu{overdispersed} beta? Yes/no.}\spc{0}
+
+
+\easysubproblem{Why does mixing / compounding give more \qu{degrees of freedom} to the model of the phenomenom you care about (denoted $Y$ in class and above). Discuss what this means and how it may be useful in the real world.}\spc{10}
+
+
+\end{enumerate}
+
+\problem{Introducing the king: the normal distribution $\mathcal{N}$ and his princes/sses: the lognormal distribution Log$\mathcal{N}$, chi-squared distribution $\chi^2_k$, Student's T distribution $T_k$ and Fisher-Snecodor's distribution $F_{k_1,k_2}$.}
+
+\begin{enumerate}
+
+\easysubproblem{Let $X_1 \sim \normnot{\mu_1}{\sigsq_1}$ independent of $X_2 \sim \normnot{\mu_2}{\sigsq_2}$. Prove $X_1 + X_2 \sim  \normnot{\mu_1 + \mu_2}{\sigsq_1 + \sigsq_2}$ using ch.f.'s.}\spc{5}
+
+\extracreditsubproblem{Let $X_1 \sim \normnot{\mu_1}{\sigsq_1}$ independent of $X_2 \sim \normnot{\mu_2}{\sigsq_2}$. Prove $X_1 + X_2 \sim  \normnot{\mu_1 + \mu_2}{\sigsq_1 + \sigsq_2}$ using the definition of convolution on a separate page. This is in the book but try not to look at it.}\spc{0}
+
+\intermediatesubproblem{Let $X \sim \normnot{\mu}{\sigsq}$ and $Y=X \indic{X \geq a}$. Find $f_Y(y)$.}\spc{6}
+
+\easysubproblem{Let $X \sim \lognormnot{\mu}{\sigsq}$ and $Y=\natlog{X}$. How is $Y$ distributed? Use a heuristic argument. No need to actually change variables.}\spc{3}
+
+
+\intermediatesubproblem{Let $X_1 \sim \lognormnot{\mu_1}{\sigsq_1}$, $X_2 \sim \lognormnot{\mu_2}{\sigsq_2}, \ldots, X_n \sim \lognormnot{\mu_n}{\sigsq_n}$ all independent of each other and $Y=\prod_{i=1}^n X_i$. How is $Y$ distributed? Use a heuristic argument. No need to actually change variables.}\spc{3}
+
+\intermediatesubproblem{The average return of the S\&P 500 stock index since 1928 is 11.4\% and the standard deviation is 19.7\%. Assume for the purposes of this problem that percentage returns is normally distributed (even though it is not true in practice). If you put \$1,000 into the stock market, what is the probability you have \$5,000 after 10 years? The \texttt{R} function you need is \texttt{plnorm}.}\spc{6}
+
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim \chisq{k}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim \chisq{k}$, find the kernel of $f_X(x)$.}\spc{3}
+
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim F_{k_1,k_2}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim F_{k_1,k_2}$, find the kernel of $f_X(x)$.}\spc{3}
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim T_{k}$ where $k_1, \ldots$ represents constants.}\spc{3}
+
+\easysubproblem{Let $X \sim T_k$, find the kernel of $f_X(x)$.}\spc{3}
+
+
+\easysubproblem{Let $X \sim \cauchy{0}{1}$, find the kernel of $f_X(x)$.}\spc{3}
+
+\easysubproblem{Using $Z_1,  Z_2, \ldots \iid \stdnormnot$, find a function $g$ s.t. $g(Z_1,  Z_2, \ldots, k_1, \ldots) \sim \cauchy{0}{1}$ where $k_1, \ldots$ represents constants.}\spc{1}
+
+\easysubproblem{Let $X \sim \cauchy{0}{1}$, prove that $\expe{X}$ does not exist.}\spc{5}
+
+
+\extracreditsubproblem{Show that the PDF of $X \sim T_k$, converges to the PDF of $Z \sim \stdnormnot$ when $k \rightarrow \infty$. Do not look at the notes.}\spc{17}
+\end{enumerate}
+%%% TK: simple transformations of the normal, chisq, lognormal, truncated normal.
+
