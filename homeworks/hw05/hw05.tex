@@ -119,11 +119,26 @@ NAME: \line(1,0){380}
 
 \end{enumerate}
 
-%\problem{Some questions about ch.f.'s.}
+\problem{Some questions about ch.f.'s and the MVN really quickly}
+
+\begin{enumerate}
+
+%\hardsubproblem{Let $X \sim \gammanot{\alpha}{\beta}$. Find $\phi_X(t)$. }\spc{10}
 %
-%\begin{enumerate}
-%
-%\easysubproblem{}\spc{2}
-%\end{enumerate}
+%\easysubproblem{Let $X \sim \chisq{n}$. Find $\phi_X(t)$. Hint: use (a).}\spc{3}
+
+\easysubproblem{Let $\X_1, \ldots, \X_n \iid \multnormnot{n}{\muvec}{\Sigma}$. Write the PDF of $\X_i$.}\spc{3}
+
+\easysubproblem{Find the mean $\muvec_{\xbar}$ of $\bar{\bv{X}} := \overn{\X_1 + \ldots + \X_n}$.}\spc{3}
+
+\intermediatesubproblem{Find the variance matrix $\Sigma_{\xbar}$ of $\bar{\bv{X}} := \overn{\X_1 + \ldots + \X_n}$.}\spc{3}
+
+\hardsubproblem{Use the ch.f. of the MVN to prove that $\bar{\bv{X}} \sim \multnormnot{n}{\muvec_{\xbar}}{\Sigma_{\xbar}}$ and substitute in the mean vector and variance covariance matrix answers for (b) and (c).}\spc{8}
+
+\hardsubproblem{Show that $\parens{\bar{\bv{X}} - \muvec_{\xbar}}^\top \Sigma_{\xbar}^{-1} \parens{\bar{\bv{X}} - \muvec_{\xbar}} \sim \chisq{n}$. This amounts to repeating a proof from class.}\spc{8}
+
+\intermediatesubproblem{The parameter space for the multivatiate normal distribution is $\muvec \in \reals^n$ but what is the valid space for $\Sigma$? You can get this from wikipedia. Make sure you explain the answer.}\spc{8}
+
+\end{enumerate}
 
 \end{document}
