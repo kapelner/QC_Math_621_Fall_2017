@@ -2,9 +2,10 @@
 
 This is the course homepage for Math 621 for the Fall semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_621_Fall_2017/master/syllabus/syllabus.pdf).
 
+<!--
 ## Schedule
 
-Due to the Jewish holidays, I cannot be here on two Thursdays October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 8-9:15PM and Monday November 13 from 8-9:15PM. Please plan in advance to make these reviews.
+Due to the Jewish holidays, I cannot be here on two Thursdays October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 8-9:15PM and Monday November 13 from 8-9:15PM. Please plan in advance to make these reviews.-->
 
 ## Lectures
 
@@ -49,8 +50,8 @@ This class has prerequesites of basic probability and some linear algebra. In th
 <!--
 * Homework 9 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12)
 * Homework 8 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2)
-* Homework 7 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23)
-* Homework 6 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11)-->
+* Homework 7 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23)-->
+* Homework 6 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw06/hw06.pdf) (due 12/19)
 * Homework 5 INCOMPLETE [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw05/hw05.pdf) (due 11/30)
 * Homework 4 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw04/hw04.pdf) (due 11/14 at exam time)
 * Homework 3 [(download)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/homeworks/hw03/hw03.pdf) (due 10/17)
