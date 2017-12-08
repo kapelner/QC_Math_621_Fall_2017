@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 621 Fall 2017 Homework \#6 INCOMPLETE}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due KY258 8:30PM, Tuesday, November 19, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, read about the multivariate normal distribution, inequalities, tail bounds, convergence in distribution, convergence in probability to a constant and convergence in law to a constant.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems. 
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 10 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks which are \textit{not} on this printout. Keep this first page printed for your records.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){380}
+\clearpage
+}
+
+
+
+
+
+
+\problem{The MVN r.v.}
+
+\begin{enumerate}
+
+
+\easysubproblem{Given $\Z \sim \multnormnot{n}{0_n}{I_n}$, find the distribution of $A\Z$ where $A$ is a matrix of constants with a suitable dimension for multiplication.}\spc{4}
+
+
+\easysubproblem{Given $\Z \sim \multnormnot{n}{0_n}{I_n}$, find the distribution of $A\Z B$ where $A$ and $B$ are matrices of constants with suitable dimensions.}\spc{4}
+
+
+\easysubproblem{Given $\Z \sim \multnormnot{n}{0_n}{I_n}$, find the PDF of $AZ$.}\spc{5}
+
+
+\hardsubproblem{In the last homework you showed that the parameter space $\Sigma \in$ the set of semi-positive definite matrices. It seems in the last question there is one more restriction if you want the density to be defined. What is it?}\spc{4}
+
+\intermediatesubproblem{If $\X \sim \multnormnot{n}{\muvec}{\Sigma}$ find the distribution of the \qu{Mahalanobis Distance}. 
+
+\beqn
+\sqrt{(\X-\muvec)^\top\Sigma^{-1}(\X-\muvec)} \sim \hspace{8cm}
+\eeqn}
+
+
+\hardsubproblem{If $\X = A\Z + \muvec$ where $\Z \sim \multnormnot{n}{0_n}{I_n}$ and $A$ is an $n \times n$ matrix of constants and $\muvec$ is a column vector of size $n$ of constants. Express the inverse variance-covariance matrix i.e. $\var{\X}^{-1}$ as a function of $A$ and $\muvec$.}\spc{4}
+
+\end{enumerate}
+
+\problem{Probability Bounding Inequalities}
+
+\begin{enumerate}
+
+\easysubproblem{Prove Markov's Inequality for a positive r.v. $X$.}\spc{5}
+
+\easysubproblem{Prove a Markov's-like Inequality for a negative r.v. $X$.}\spc{5}
+
+
+\intermediatesubproblem{Prove that if $\expe{\abss{X}}$ is finite then $\expe{X}$ is finite.}\spc{3}
+
+
+\hardsubproblem{Prove that if $\expe{X}$ is finite then $\expe{\abss{X}}$ is finite.}\spc{8}
+
+
+\easysubproblem{Prove Markov's Inequality for any r.v. $X$ with a finite expectation. You need to quote the lemma in (d).}\spc{3}
+
+
+\intermediatesubproblem{Prove that the first quartile of a positive r.v. $X$ is upper-bounded by $1/4$ its mean.}\spc{5}
+
+
+
+\easysubproblem{Prove Chebyshev's Inequality for any r.v. $X$ with a finite variance.}\spc{2}
+
+
+
+\intermediatesubproblem{Let $X_n \sim \exponential{n}$. Compare the Markov, Chebyshev and Chernoff bounds for $\prob{X \geq 1}$. How fast do each go to zero?}\spc{20}
+
+
+
+\end{enumerate}
+
+\problem{Other Inequalities}
+
+\begin{enumerate}
+\easysubproblem{Reprove the Cauchy-Schwartz inequality for the expectation of the product of two positive r.v.'s $X$ and $Y$.}\spc{8}
+
+
+\end{enumerate}
+\end{document}
