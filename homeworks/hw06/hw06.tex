@@ -7,7 +7,7 @@
 
 
 
-\title{MATH 621 Fall 2017 Homework \#6 INCOMPLETE}
+\title{MATH 621 Fall 2017 Homework \#6}
 
 \author{Professor Adam Kapelner} %STUDENTS: write your name here
 
@@ -109,8 +109,61 @@ NAME: \line(1,0){380}
 \problem{Other Inequalities}
 
 \begin{enumerate}
-\easysubproblem{Reprove the Cauchy-Schwartz inequality for the expectation of the product of two positive r.v.'s $X$ and $Y$.}\spc{8}
+\easysubproblem{Reprove the Cauchy-Schwartz inequality for the expectation of the product of two positive r.v.'s $X$ and $Y$.}\spc{12}
 
+\intermediatesubproblem{If $Y = aX + c$ where $X,Y$ are r.v.'s and $a,c$ are positive constants, show $\corrtwo{X}{Y} = 1$.}\spc{8}
+
+\easysubproblem{Prove a Jensens-like inequality for all convex functions $h$ for all discrete r.v.'s $X$ with finite support.}\spc{8}
+
+\easysubproblem{Prove that $\sqrt{\expe{X}} \geq \expe{\sqrt{X}}$.}\spc{1}
+
+\hardsubproblem{If $X \sim \binomial{n_1}{p}$ dependent with $Y \sim \binomial{n_2}{p}$, show that 
+
+\beqn
+\expe{XY} \leq p\sqrt{n_1 n_2 (n_1 p + 1 - p)(n_2 p + 1 - p)}.
+\eeqn}~\spc{12}
+\end{enumerate}
+
+
+\problem{Convergence in distribution, probability and law.}
+
+\begin{enumerate}
+\easysubproblem{Provide the definitions of $\convd$, $\convp$ and $\convLp{r}$ below.}\spc{7}
+
+\easysubproblem{Given
+
+\beqn
+X_n \sim \begin{cases}
+0 \withprob 1 - \frac{1}{(n+1)^2} \\
+1 \withprob \frac{1}{(n+1)^2} \\
+\end{cases}
+\eeqn
+
+Show that $X_n \convd 0$.}\spc{9}
+
+\intermediatesubproblem{Show that $X_n \convp 0$. You need to show it for $\epsilon \in (0,1)$ and $\epsilon \geq 1$ separately.}\spc{7}
+
+\intermediatesubproblem{Show that $X_n \convLp{r} 0$ for all $r \geq 1$.}\spc{7}
+
+\intermediatesubproblem{If $X_n \sim \exponential{n}$, show that $X_n \convd 0$.}\spc{7}
+
+\intermediatesubproblem{If $X_n \sim \exponential{n}$, show that $X_n \convp 0$.}\spc{7}
+
+\intermediatesubproblem{If $X_n \sim \exponential{n}$, show that $X_n \convLp{1} 0$.}\spc{7}
+
+\end{enumerate}
+
+
+\problem{Weak Law of Large numbers.}
+
+\begin{enumerate}
+\easysubproblem{Given $\Xoneton \sim$ with finite $\mu$ and $\sigsq$, show that $\Xbar_n \convp \mu$, the \qu{weak} weak law of large numbers.}\spc{3}
+
+\hardsubproblem{Usually, $\convp$ implies $\convd$ and not vice versa. But there is a case where it goes both ways (convergence to a constant). For some sequence of r.v. $\Xoneton$, prove that if $X_n \convd c$ then $X_n \convp c$. This is very hard. Look online if you absolutely have to but try yourself.}\spc{20}
+
+\hardsubproblem{Given $\Xoneton \sim$ with finite $\mu$ but \emph{not finite} $\sigsq$, show that $\Xbar_n \convd \mu$. Hint: use the characteristic functions and a similar argument we used to prove the central limit theorem.}\spc{15}
+
+\easysubproblem{Use (b) and (c) to show that given $\Xoneton \sim$ with finite $\mu$ but \emph{not finite} $\sigsq$, show that $\Xbar_n \convp \mu$, the \qu{strong} weak law of large numbers.}\spc{1}
 
 \end{enumerate}
 \end{document}
