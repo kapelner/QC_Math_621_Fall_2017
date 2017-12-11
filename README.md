@@ -2,9 +2,10 @@
 
 This is the course homepage for Math 621 for the Fall semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_621_Fall_2017/master/syllabus/syllabus.pdf).
 
+<!--
 ## Schedule
 
-Due to the Jewish holidays, I cannot be here on two Thursdays October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 8-9:15PM and Monday November 13 from 8-9:15PM. Please plan in advance to make these reviews.
+Due to the Jewish holidays, I cannot be here on two Thursdays October 5 and 12 and thus those two classes are canceled. I usually give one whole lecture period devoted entirely to review. There will be no such lecture period for Midterms 1 and 2. To make up for this, I will do a separate review period Monday October 2 from 8-9:15PM and Monday November 13 from 8-9:15PM. Please plan in advance to make these reviews.-->
 
 ## Lectures
 
