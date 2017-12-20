@@ -66,7 +66,7 @@ This class has prerequesites of basic probability and some linear algebra. In th
 
 * Midterm II, November 14 (in class). [(exam)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
-* Final, December 19 8:30-10:30PM KY 258
+* Final, December 19 8:30-10:30PM KY 258 [(exam)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/final/final.pdf) [(solutions)](https://github.com/kapelner/QC_Math_621_Fall_2017/blob/master/exams/final/final_solutions.pdf)
 
 ## Practice Exams
 
